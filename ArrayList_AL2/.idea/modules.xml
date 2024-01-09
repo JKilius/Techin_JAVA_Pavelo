@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AL2_01_Words/AL2_01_Words.iml" filepath="$PROJECT_DIR$/AL2_01_Words/AL2_01_Words.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AL2_02_RecurringWord/AL2_02_RecurringWord.iml" filepath="$PROJECT_DIR$/AL2_02_RecurringWord/AL2_02_RecurringWord.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AL2_03_WordsInReverseOrder/AL2_03_WordsInReverseOrder.iml" filepath="$PROJECT_DIR$/AL2_03_WordsInReverseOrder/AL2_03_WordsInReverseOrder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AL2_04_WordsInAlphabeticalOrder/AL2_04_WordsInAlphabeticalOrder.iml" filepath="$PROJECT_DIR$/AL2_04_WordsInAlphabeticalOrder/AL2_04_WordsInAlphabeticalOrder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AL2_05_NumberOfItems/AL2_05_NumberOfItems.iml" filepath="$PROJECT_DIR$/AL2_05_NumberOfItems/AL2_05_NumberOfItems.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AL2_06_RemoveLast/AL2_06_RemoveLast.iml" filepath="$PROJECT_DIR$/AL2_06_RemoveLast/AL2_06_RemoveLast.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AL2_07_SumOfNumbers/AL2_07_SumOfNumbers.iml" filepath="$PROJECT_DIR$/AL2_07_SumOfNumbers/AL2_07_SumOfNumbers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AL2_08_AverageOfNumbers/AL2_08_AverageOfNumbers.iml" filepath="$PROJECT_DIR$/AL2_08_AverageOfNumbers/AL2_08_AverageOfNumbers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AL2_09_LengthsOfStrings/AL2_09_LengthsOfStrings.iml" filepath="$PROJECT_DIR$/AL2_09_LengthsOfStrings/AL2_09_LengthsOfStrings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AL2_10_TheGreatest/AL2_10_TheGreatest.iml" filepath="$PROJECT_DIR$/AL2_10_TheGreatest/AL2_10_TheGreatest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AL2_11_MoreThanOnce/AL2_11_MoreThanOnce.iml" filepath="$PROJECT_DIR$/AL2_11_MoreThanOnce/AL2_11_MoreThanOnce.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AL2_12_CombiningArrayLists/AL2_12_CombiningArrayLists.iml" filepath="$PROJECT_DIR$/AL2_12_CombiningArrayLists/AL2_12_CombiningArrayLists.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AL2_13_SmartCombining/AL2_13_SmartCombining.iml" filepath="$PROJECT_DIR$/AL2_13_SmartCombining/AL2_13_SmartCombining.iml" />
+    </modules>
+  </component>
+</project>

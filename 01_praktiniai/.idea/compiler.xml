@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="01_01.AdaLovelace" />
+        <module name="01_04.Greeting" />
+        <module name="01_03.Message" />
+        <module name="01_02.OnceUponATime" />
+        <module name="01_05.Story" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

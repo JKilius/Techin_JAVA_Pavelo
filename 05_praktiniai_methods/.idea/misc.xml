@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/05_08.Word/pom.xml" />
+        <option value="$PROJECT_DIR$/05_02.Reprint/pom.xml" />
+        <option value="$PROJECT_DIR$/05_05.Division/pom.xml" />
+        <option value="$PROJECT_DIR$/05_10.Smallest/pom.xml" />
+        <option value="$PROJECT_DIR$/05_11.Greatest/pom.xml" />
+        <option value="$PROJECT_DIR$/05_13.StarSign/pom.xml" />
+        <option value="$PROJECT_DIR$/05_07.NumberUno/pom.xml" />
+        <option value="$PROJECT_DIR$/05_09.Summation/pom.xml" />
+        <option value="$PROJECT_DIR$/05_12.Averaging/pom.xml" />
+        <option value="$PROJECT_DIR$/05_06.DivisibleByThree/pom.xml" />
+        <option value="$PROJECT_DIR$/05_14.AdvancedAstrology/pom.xml" />
+        <option value="$PROJECT_DIR$/05_01.InAHoleInTheGround/pom.xml" />
+        <option value="$PROJECT_DIR$/05_03.FromOneToParameter/pom.xml" />
+        <option value="$PROJECT_DIR$/05_04.FromParameterToOne/pom.xml" />
+      </list>
+    </option>
+    <option name="workspaceImportForciblyTurnedOn" value="true" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="21" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

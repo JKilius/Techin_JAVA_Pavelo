@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/02_03.DoubleInput/pom.xml" />
+        <option value="$PROJECT_DIR$/02_02.IntegerInput/pom.xml" />
+        <option value="$PROJECT_DIR$/02_05.SecondsInADay/pom.xml" />
+        <option value="$PROJECT_DIR$/02_01.VariousVariables/pom.xml" />
+        <option value="$PROJECT_DIR$/02_09.SimpleCalculator/pom.xml" />
+        <option value="$PROJECT_DIR$/02_06.SumOfThreeNumbers/pom.xml" />
+        <option value="$PROJECT_DIR$/02_04.DifferentTypesOfInput/pom.xml" />
+        <option value="$PROJECT_DIR$/02_07.MultiplicationFormula/pom.xml" />
+        <option value="$PROJECT_DIR$/02_08.AverageOfThreeNumbers/pom.xml" />
+      </list>
+    </option>
+    <option name="workspaceImportForciblyTurnedOn" value="true" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="21" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

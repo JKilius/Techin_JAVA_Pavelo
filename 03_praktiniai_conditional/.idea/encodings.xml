@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/03_01.SpeedingTicket/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03_01.SpeedingTicket/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03_02.Positivity/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03_02.Positivity/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03_03.LargerThanOrEqualTo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03_03.LargerThanOrEqualTo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03_04.GradesAndPoints/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03_04.GradesAndPoints/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03_05.OddOrEven/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03_05.OddOrEven/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03_06.Password/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03_06.Password/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03_07.Same/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03_07.Same/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03_08.CheckingTheAge/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03_08.CheckingTheAge/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03_09.LeapYear/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03_09.LeapYear/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03_10.GiftTax/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03_10.GiftTax/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

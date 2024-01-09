@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/08_01.Room/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_01.Room/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_02.Whistle/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_02.Whistle/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_03.Door/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_03.Door/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_04.Product/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_04.Product/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_05.DecreasingCounter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_05.DecreasingCounter/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_06.Debt/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_06.Debt/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_07.Song/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_07.Song/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_08.Gauge/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_08.Gauge/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_09.Agent/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_09.Agent/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_10.Multiplier/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_10.Multiplier/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_11.NumberStatistics/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_11.NumberStatistics/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_12.PaymentCard/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_12.PaymentCard/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

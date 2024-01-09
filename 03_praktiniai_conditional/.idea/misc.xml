@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/03_07.Same/pom.xml" />
+        <option value="$PROJECT_DIR$/03_10.GiftTax/pom.xml" />
+        <option value="$PROJECT_DIR$/03_06.Password/pom.xml" />
+        <option value="$PROJECT_DIR$/03_09.LeapYear/pom.xml" />
+        <option value="$PROJECT_DIR$/03_05.OddOrEven/pom.xml" />
+        <option value="$PROJECT_DIR$/03_02.Positivity/pom.xml" />
+        <option value="$PROJECT_DIR$/03_01.SpeedingTicket/pom.xml" />
+        <option value="$PROJECT_DIR$/03_08.CheckingTheAge/pom.xml" />
+        <option value="$PROJECT_DIR$/03_04.GradesAndPoints/pom.xml" />
+        <option value="$PROJECT_DIR$/03_03.LargerThanOrEqualTo/pom.xml" />
+      </list>
+    </option>
+    <option name="workspaceImportForciblyTurnedOn" value="true" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="21" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

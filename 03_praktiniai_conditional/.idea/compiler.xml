@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="03_08.CheckingTheAge" />
+        <module name="03_09.LeapYear" />
+        <module name="03_01.SpeedingTicket" />
+        <module name="03_04.gradesAndPoints" />
+        <module name="03_05.OddOrEven" />
+        <module name="03_03.LargerThanOrEqualTo" />
+        <module name="03_06.Password" />
+        <module name="03_07.Same" />
+        <module name="03_02.Positivity" />
+        <module name="03_10.GiftTax" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

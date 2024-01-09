@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/02_01.VariousVariables/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/02_01.VariousVariables/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/02_02.IntegerInput/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/02_02.IntegerInput/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/02_03.DoubleInput/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/02_03.DoubleInput/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/02_04.DifferentTypesOfInput/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/02_04.DifferentTypesOfInput/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/02_05.SecondsInADay/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/02_05.SecondsInADay/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/02_06.SumOfThreeNumbers/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/02_06.SumOfThreeNumbers/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/02_07.MultiplicationFormula/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/02_07.MultiplicationFormula/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/02_08.AverageOfThreeNumbers/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/02_08.AverageOfThreeNumbers/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/02_09.SimpleCalculator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/02_09.SimpleCalculator/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

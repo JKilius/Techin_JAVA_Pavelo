@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="02_01.VariousVariables" />
+        <module name="02_07.MultiplicationFormula" />
+        <module name="02_06.SumOfThreeNumbers" />
+        <module name="02_04.DifferentTypesOfInput" />
+        <module name="02_02.IntegerInput" />
+        <module name="02_03.DoubleInput" />
+        <module name="02_09.SimpleCalculator" />
+        <module name="02_05.SecondsInADay" />
+        <module name="02_08.AverageOfThreeNumbers" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

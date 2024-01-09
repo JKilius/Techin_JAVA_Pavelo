@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/07_1 - Algoritmai (praktiniai).iml" filepath="$PROJECT_DIR$/.idea/07_1 - Algoritmai (praktiniai).iml" />
+      <module fileurl="file://$PROJECT_DIR$/07_1_01_Sorting/07_1_01_Sorting.iml" filepath="$PROJECT_DIR$/07_1_01_Sorting/07_1_01_Sorting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07_1_02_GuessingGame/07_1_02_GuessingGame.iml" filepath="$PROJECT_DIR$/07_1_02_GuessingGame/07_1_02_GuessingGame.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07_1_03_BinarySearch/07_1_03_BinarySearch.iml" filepath="$PROJECT_DIR$/07_1_03_BinarySearch/07_1_03_BinarySearch.iml" />
+    </modules>
+  </component>
+</project>

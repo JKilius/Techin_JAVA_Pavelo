@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/AL_01.ThirdElement/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AL_01.ThirdElement/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AL_02.SecondPlusThird/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AL_02.SecondPlusThird/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AL_03.IndexOutOfBoundsException/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AL_03.IndexOutOfBoundsException/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AL_04.ListSize/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AL_04.ListSize/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AL_05.LastInList/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AL_05.LastInList/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AL_06.FirstAndLast/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AL_06.FirstAndLast/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AL_07.RememberTheseNumbers/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AL_07.RememberTheseNumbers/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AL_08.OnlyTheseNumbers/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AL_08.OnlyTheseNumbers/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AL_09.GreatestInList/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AL_09.GreatestInList/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AL_10.IndexOf/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AL_10.IndexOf/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AL_11.IndexOfSmallest/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AL_11.IndexOfSmallest/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AL_12.SumOfAList/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AL_12.SumOfAList/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AL_13.AverageOfAList/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AL_13.AverageOfAList/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AL_14.OnTheList/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AL_14.OnTheList/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AL_15.PrintInRange/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AL_15.PrintInRange/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AL_16.Sum/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AL_16.Sum/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AL_17.RemoveLast/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AL_17.RemoveLast/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

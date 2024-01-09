@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/04_11.Counting/pom.xml" />
+        <option value="$PROJECT_DIR$/04_16.Factorial/pom.xml" />
+        <option value="$PROJECT_DIR$/04_14.SumOfASequence/pom.xml" />
+        <option value="$PROJECT_DIR$/04_13.FromWhereToWhere/pom.xml" />
+        <option value="$PROJECT_DIR$/04_12.CountingToHundred/pom.xml" />
+        <option value="$PROJECT_DIR$/04_15.SumOfASequenceTheSequel/pom.xml" />
+      </list>
+    </option>
+    <option name="workspaceImportForciblyTurnedOn" value="true" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="21" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

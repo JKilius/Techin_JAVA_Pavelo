@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="08_09.Agent" />
+        <module name="08_06.Debt" />
+        <module name="08_10.Multiplier" />
+        <module name="08_05.DecreasingCounter" />
+        <module name="08_01.Room" />
+        <module name="08_02.Whistle" />
+        <module name="08_12.PaymentCard" />
+        <module name="08_07.Song" />
+        <module name="08_08.Gauge" />
+        <module name="08_11.Statistics" />
+        <module name="08_03.Door" />
+        <module name="08_04.Product" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

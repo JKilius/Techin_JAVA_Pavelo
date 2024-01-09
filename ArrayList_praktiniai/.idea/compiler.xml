@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="AL_16.Sum" />
+        <module name="AL_09.GreatestInList" />
+        <module name="AL_15.PrintInRange" />
+        <module name="AL_10.IndexOf" />
+        <module name="AL_05.LastInList" />
+        <module name="AL_06.FirstAndLast" />
+        <module name="AL_02.SecondPlusThird" />
+        <module name="AL_14.OnTheList" />
+        <module name="AL_12.SumOfAList" />
+        <module name="AL_17.RemoveLast" />
+        <module name="AL_08.OnlyTheseNumbers" />
+        <module name="AL_01.ThirdElement" />
+        <module name="AL_11.IndexOfSmallest" />
+        <module name="AL_07.RememberTheseNumbers" />
+        <module name="AL_13.AverageOfAList" />
+        <module name="AL_03.IndexOutOfBoundsException" />
+        <module name="AL_04.ListSize" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

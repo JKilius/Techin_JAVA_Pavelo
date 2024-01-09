@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="04_04.NumberOfNumbers" />
+        <module name="04_05.NumberOfNegativeNumbers" />
+        <module name="04_02.AreWeThereYet" />
+        <module name="04_01.CarryOn" />
+        <module name="04_08.AverageOfNumbers" />
+        <module name="04_09.AverageOfPositiveNumbers" />
+        <module name="04_06.SumOfNumbers" />
+        <module name="04_03.OnlyPositives" />
+        <module name="04_07.NumberAndSumOfNumbers" />
+        <module name="04_16.RepeatingBreakingAndRemembering" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

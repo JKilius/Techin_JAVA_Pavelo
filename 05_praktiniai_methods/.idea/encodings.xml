@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/05_01.InAHoleInTheGround/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05_01.InAHoleInTheGround/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05_02.Reprint/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05_02.Reprint/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05_03.FromOneToParameter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05_03.FromOneToParameter/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05_04.FromParameterToOne/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05_04.FromParameterToOne/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05_05.Division/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05_05.Division/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05_06.DivisibleByThree/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05_06.DivisibleByThree/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05_07.NumberUno/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05_07.NumberUno/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05_08.Word/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05_08.Word/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05_09.Summation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05_09.Summation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05_10.Smallest/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05_10.Smallest/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05_11.Greatest/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05_11.Greatest/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05_12.Averaging/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05_12.Averaging/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05_13.StarSign/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05_13.StarSign/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05_14.AdvancedAstrology/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05_14.AdvancedAstrology/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

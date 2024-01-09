@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="04_11.Counting" />
+        <module name="04_16.Factorial" />
+        <module name="04_13.FromWhereToWhere" />
+        <module name="04_12.CountingToHundred" />
+        <module name="04_15.SumOfASequenceTheSequel" />
+        <module name="04_14.SumOfASequence" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

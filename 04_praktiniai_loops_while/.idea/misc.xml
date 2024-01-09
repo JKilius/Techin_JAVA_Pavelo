@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/04_praktiniai_loops_while/04_01.CarryOn/pom.xml" />
+        <option value="$PROJECT_DIR$/04_praktiniai_loops_while/04_06.SumOfNumbers/pom.xml" />
+        <option value="$PROJECT_DIR$/04_praktiniai_loops_while/04_02.AreWeThereYet/pom.xml" />
+        <option value="$PROJECT_DIR$/04_praktiniai_loops_while/04_03.OnlyPositives/pom.xml" />
+        <option value="$PROJECT_DIR$/04_praktiniai_loops_while/04_04.NumberOfNumbers/pom.xml" />
+        <option value="$PROJECT_DIR$/04_praktiniai_loops_while/04_08.AverageOfNumbers/pom.xml" />
+        <option value="$PROJECT_DIR$/04_praktiniai_loops_while/04_07.NumberAndSumOfNumbers/pom.xml" />
+        <option value="$PROJECT_DIR$/04_praktiniai_loops_while/04_05.NumberOfNegativeNumbers/pom.xml" />
+        <option value="$PROJECT_DIR$/04_praktiniai_loops_while/04_09.AverageOfPositiveNumbers/pom.xml" />
+        <option value="$PROJECT_DIR$/04_praktiniai_loops_while/04_10.RepeatingBreakingAndRemembering/pom.xml" />
+      </list>
+    </option>
+    <option name="workspaceImportForciblyTurnedOn" value="true" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="21" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
