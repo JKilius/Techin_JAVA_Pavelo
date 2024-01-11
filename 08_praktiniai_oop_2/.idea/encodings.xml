@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/08_2_01.Items/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_2_01.Items/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_2_02.PersonalInformation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_2_02.PersonalInformation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_2_03.TelevisionPrograms/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_2_03.TelevisionPrograms/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_2_04.Books/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_2_04.Books/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_2_05.ConstructorOverload/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_2_05.ConstructorOverload/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_2_06.OverloadedCounter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_2_06.OverloadedCounter/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_2_07.BiggestPetShop/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_2_07.BiggestPetShop/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_2_08.HealthStation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_2_08.HealthStation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_2_09.CardPayments/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_2_09.CardPayments/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_2_10.ComparingApartments/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_2_10.ComparingApartments/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_2_11.DatingApp/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_2_11.DatingApp/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_2_12.Money/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_2_12.Money/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

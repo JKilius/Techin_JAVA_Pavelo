@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="08_2_02.PersonalInformation" />
+        <module name="08_2_09.CardPayments" />
+        <module name="08_2_07.BiggestPetShop" />
+        <module name="08_2_03.TelevisionPrograms" />
+        <module name="08_2_08.HealthStation" />
+        <module name="08_2_11.DatingApp" />
+        <module name="08_2_06.OverloadedCounter" />
+        <module name="08_2_01.Items" />
+        <module name="08_2_05.ConstructorOverload" />
+        <module name="08_2_12.Money" />
+        <module name="08_2_04.Books" />
+        <module name="08_2_10.ComparingApartments" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
