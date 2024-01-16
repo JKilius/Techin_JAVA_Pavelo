@@ -13,7 +13,8 @@ public class PhilatelistImpl implements Philatelist {
 
     @Override
     public void addToCollection(PostStamp postStamp) {
-        if (postStamp == null ||  postStamp.getName() == null || postStamp.getName().isBlank())
+//        postStamps.stream().filter(postStamps -> postStamp != null && postStamp.getName() != null && postStamp.getName().isEmpty()).forEachOrdered(postStamps::add);
+        if (postStamp == null || postStamp.getName() == null || postStamp.getName().isBlank())
             throw new IllegalArgumentException();
         postStamps.add(postStamp);
     }
@@ -25,40 +26,44 @@ public class PhilatelistImpl implements Philatelist {
 
     @Override
     public void printAllPostStampNames() {
-        for (PostStamp postStamp : postStamps) {
-            System.out.println(postStamp.getName());
-        }
+        postStamps.forEach(postStamp -> System.out.println(postStamp.getName()));
+//        for (PostStamp postStamp : postStamps) {
+//            System.out.println(postStamp.getName());
+//        }
 
     }
 
     @Override
     public void printPostStampsWithPriceGreaterThan(double price) {
-        for (PostStamp postStamp : postStamps) {
-            if (postStamp.getMarketPrice() > price) System.out.println(postStamp.getName());
-        }
+//        postStamps.stream().filter(postStamp -> postStamp.getMarketPrice() > price).forEach(System.out::println);
+        postStamps.stream().filter(postStamp -> postStamp.getMarketPrice() > price).forEach(postStamp -> System.out.println(postStamp.getName()));
+//        for (PostStamp postStamp : postStamps) {
+//            if (postStamp.getMarketPrice() > price) System.out.println(postStamp.getName());
+//        }
     }
 
     @Override
     public boolean isPostStampInCollection(PostStamp postStamp) {
-        if (isPostStampWithNameInCollection(postStamp.getName())) return true;
-        return false;
+        return postStamps.contains(postStamp);
     }
 
     @Override
     public boolean isPostStampWithNameInCollection(String name) {
-        for (PostStamp stamp : postStamps) {
-            if (stamp.getName().equals(name)) return true;
-        }
-        return false;
+        return postStamps.stream().anyMatch(postStamp -> postStamp.getName().equals(name));
+//        for (PostStamp stamp : postStamps) {
+//            if (stamp.getName().equals(name)) return true;
+//        }
+//        return false;
     }
 
     @Override
     public double calculateTotalMarketPrice() {
-        double total = 0;
-        for (PostStamp postStamp : postStamps) {
-            total += postStamp.getMarketPrice();
-        }
-        return total;
+        return postStamps.stream().mapToDouble(PostStamp::getMarketPrice).sum();
+//        double total = 0;
+//        for (PostStamp postStamp : postStamps) {
+//            total += postStamp.getMarketPrice();
+//        }
+//        return total;
     }
 
     @Override
@@ -68,30 +73,35 @@ public class PhilatelistImpl implements Philatelist {
 
     @Override
     public PostStamp getTheMostExpensivePostStampByMarketValue() {
-        double max = 0;
-        PostStamp mostExpensiveStamp = new PostStamp("", 0, 0);
-        for (PostStamp stamp : postStamps) {
-            if (stamp.getMarketPrice() > max) {
-                max = stamp.getMarketPrice();
-                mostExpensiveStamp = stamp;
-            }
-        }
-        return mostExpensiveStamp;
+        return postStamps.stream().max(Comparator.comparing(PostStamp::getMarketPrice)).orElse(null);
+//        double max = 0;
+//        PostStamp mostExpensiveStamp = new PostStamp("", 0, 0);
+//        for (PostStamp stamp : postStamps) {
+//            if (stamp.getMarketPrice() > max) {
+//                max = stamp.getMarketPrice();
+//                mostExpensiveStamp = stamp;
+//            }
+//        }
+//        return mostExpensiveStamp;
     }
 
     @Override
     public List<PostStamp> findPostStampsByNameContaining(String nameFragment) {
-        List<PostStamp> matchingStamps = new ArrayList<>();
-        for (PostStamp postStamp : postStamps) {
-            if (postStamp.getName().contains(nameFragment)) matchingStamps.add(postStamp);
-        }
-        return matchingStamps;
+        return postStamps.stream().filter(postStamp -> postStamp.getName().contains(nameFragment)).toList();
+//        List<PostStamp> matchingStamps = new ArrayList<>();
+//        for (PostStamp postStamp : postStamps) {
+//            if (postStamp.getName().contains(nameFragment)) matchingStamps.add(postStamp);
+//        }
+//        return matchingStamps;
     }
 
     @Override
     public List<PostStamp> getSortedPostStampsByName() {
-        List<PostStamp> sortedStamps = postStamps;
-        Collections.sort(sortedStamps, new PostStampComparator());
-        return sortedStamps;
+//        return postStamps.stream().sorted((s1, s2) -> s1.getName().compareTo(s2.getName())).toList();
+        return postStamps.stream().sorted(Comparator.comparing(PostStamp::getName)).toList();
+
+//        List<PostStamp> sortedStamps = postStamps;
+//        Collections.sort(sortedStamps, new PostStampComparator());
+//        return sortedStamps;
     }
 }
