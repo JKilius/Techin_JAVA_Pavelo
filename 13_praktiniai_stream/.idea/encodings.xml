@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/13_01.Weighting/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/13_01.Weighting/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/13_02.ReadingFilesPerLine/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/13_02.ReadingFilesPerLine/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/13_03.BooksFromFile/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/13_03.BooksFromFile/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
