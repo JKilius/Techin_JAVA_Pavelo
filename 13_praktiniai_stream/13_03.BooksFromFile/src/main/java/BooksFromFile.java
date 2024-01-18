@@ -16,6 +16,9 @@ public class BooksFromFile {
     }
 
     public static List<Book> readBooks(String file) throws IOException {
-        return Files.lines(Paths.get(file)).map(line->line.split(",")).map(parts-> new Book(parts[0],Integer.parseInt(parts[1]),Integer.parseInt(parts[2]),parts[3])).collect(Collectors.toList());
+        return Files.lines(Paths.get(file))
+                .map(line->line.split(","))
+                .map(parts-> new Book(parts[0],Integer.parseInt(parts[1]),Integer.parseInt(parts[2]),parts[3]))
+                .toList();
     }
 }
