@@ -34,6 +34,7 @@ public class SocialNetworkImpl implements SocialNetwork {
     @Override
     public Friend findFriend(String firstName, String lastName) throws FriendNotFoundException {
         if(firstName == null || lastName == null) throw new IllegalArgumentException();
+
         return network.stream().filter(friend1 -> friend1.getFirstName()
                         .equals(firstName) && friend1.getLastName().equals(lastName))
                 .findFirst().orElseThrow(() -> new FriendNotFoundException(firstName, lastName));

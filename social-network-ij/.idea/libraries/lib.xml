@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/social-network-ij/lib/junit-4.13.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/social-network-ij/lib/hamcrest-core-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/social-network-ij/lib/exam-socialnetwork.jar!/" />
+      <root url="jar://$PROJECT_DIR$/social-network-ij/lib/exam-socialnetwork-tests.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
