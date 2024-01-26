@@ -40,12 +40,9 @@ public class LoginPage extends BasePage {
     public void clickButtonLogin (){
         buttonLogin.click();
     }
-    public void login (String email, String password){
-        HomePage homePage = new HomePage(driver);
-        homePage.clickNavMyAccount();
-        homePage.clickLinkDropDownLogin();
-        enterEmail(email);
-        enterPassword(password);
-        clickButtonLogin();
-    }
+//    public void login (String email, String password){
+//        enterEmail(email);
+//        enterPassword(password);
+//        clickButtonLogin();
+//    }
 }

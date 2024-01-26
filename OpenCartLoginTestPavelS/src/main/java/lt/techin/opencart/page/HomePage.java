@@ -30,5 +30,8 @@ public class HomePage extends BasePage {
         linkDropDownLogin.click();
     }
 
-
+//public void navigateToLoginPage(){
+//    clickNavMyAccount();
+//    clickLinkDropDownLogin();
+//}
 }

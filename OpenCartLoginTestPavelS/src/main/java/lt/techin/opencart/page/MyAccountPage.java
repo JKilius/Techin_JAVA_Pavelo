@@ -20,7 +20,7 @@ public class MyAccountPage extends BasePage {
     public void logout() {
         navMyAccount.click();
         wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-//        wait.until(ExpectedConditions.visibilityOf(linkDropDownLogout));
+        wait.until(ExpectedConditions.visibilityOf(linkDropDownLogout));
         if (linkDropDownLogout.isDisplayed()) linkDropDownLogout.click();
     }
 

@@ -1,6 +1,5 @@
 package lt.techin.opencart.test;
 
-import lt.techin.opencart.page.BasePage;
 import lt.techin.opencart.page.HomePage;
 import lt.techin.opencart.page.LoginPage;
 import org.junit.jupiter.api.BeforeEach;
@@ -10,14 +9,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class LoginPageTest extends BaseTest{
     protected HomePage homePage;
-    protected BasePage basePage;
     protected LoginPage loginPage;
 
     @BeforeEach
     void setupHomepage() {
         loginPage = new LoginPage(driver);
         homePage = new HomePage(driver);
-        basePage = new HomePage(driver);
     }
 
     @Test
