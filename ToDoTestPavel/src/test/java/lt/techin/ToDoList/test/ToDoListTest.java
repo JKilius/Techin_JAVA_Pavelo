@@ -1,16 +1,11 @@
-package lt.techin.webdriveruniversityToDoList.test;
+package lt.techin.ToDoList.test;
 
-import lt.techin.webdriveruniversityToDoList.page.ToDoListPage;
+import lt.techin.ToDoList.page.ToDoListPageWebdriveruniversity;
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
-
-import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -18,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class ToDoListTest {
 
     protected WebDriver driver;
-    protected ToDoListPage toDoListPage;
+    protected ToDoListPageWebdriveruniversity toDoListPage;
 
 
     @BeforeEach
@@ -26,7 +21,7 @@ public class ToDoListTest {
         driver = new ChromeDriver();
         driver.get("https://webdriveruniversity.com/To-Do-List/index.html");
         driver.manage().window().maximize();
-        toDoListPage = new ToDoListPage(driver);
+        toDoListPage = new ToDoListPageWebdriveruniversity(driver);
     }
 
     @AfterEach
@@ -47,17 +42,13 @@ public class ToDoListTest {
 
     @Test
     void markTaskAsDoneTest() {
-        long completedTasksBefore =
-                toDoListPage.getTaskList().stream().filter(x -> x.getCssValue("text-decoration")
-                        .contains("line-through")).count();
+        long completedTasksBefore = toDoListPage.getCompletedTaskCount();
 
         String partOfTaskTitle = "new robes";
         toDoListPage.markTaskAsDone(partOfTaskTitle);
 
-        long completedTasksAfter =
-                toDoListPage.getTaskList().stream().filter(x -> x.getCssValue("text-decoration")
-                        .contains("line-through")).count();
-        assertTrue(toDoListPage.getTaskStatus(partOfTaskTitle).contains("line-through"));
+        long completedTasksAfter = toDoListPage.getCompletedTaskCount();
+        assertTrue(toDoListPage.getTaskStyleStatus(partOfTaskTitle).contains("line-through"));
         assertEquals(completedTasksBefore + 1, completedTasksAfter);
     }
 
