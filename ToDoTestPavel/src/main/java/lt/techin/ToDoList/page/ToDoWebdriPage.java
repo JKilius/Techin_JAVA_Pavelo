@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.List;
 
-public class ToDoListPageWebdriveruniversity extends BasePage implements ToDo {
+public class ToDoWebdriPage extends BasePage implements ToDo {
 
 
     @FindBy(xpath = "//input[@type='text']")
@@ -23,7 +23,7 @@ public class ToDoListPageWebdriveruniversity extends BasePage implements ToDo {
     @FindBy(xpath = "//li")
     protected List<WebElement> taskList;
 
-    public ToDoListPageWebdriveruniversity(WebDriver webDriver) {
+    public ToDoWebdriPage(WebDriver webDriver) {
         super(webDriver);
     }
 
@@ -41,8 +41,10 @@ public class ToDoListPageWebdriveruniversity extends BasePage implements ToDo {
         driver.findElement(By.xpath("//*[contains(text(),'" + partOfTaskTitle + "')]")).click();
     }
 
-    public String getTaskStyleStatus(String partOfTaskTitle) {
-        return driver.findElement(By.xpath("//*[contains(text(),'" + partOfTaskTitle + "')]")).getCssValue("text-decoration");
+    @Override
+    public boolean isTaskCompleted(String partOfTaskTitle) {
+        return driver.findElement(By.xpath("//*[contains(text(),'" + partOfTaskTitle + "')]")).getCssValue("text" +
+                "-decoration").contains("line-through");
     }
 
     public long getCompletedTaskCount() {

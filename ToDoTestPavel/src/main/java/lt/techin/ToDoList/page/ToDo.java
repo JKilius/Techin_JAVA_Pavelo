@@ -11,8 +11,6 @@ public interface ToDo {
 
     void markTaskAsDone(String partOfTaskTitle);
 
-    String getTaskStyleStatus(String partOfTaskTitle);
-
     void deleteTask(String partOfTaskTitle);
 
     long getCompletedTaskCount();
@@ -22,4 +20,6 @@ public interface ToDo {
     int getTaskListSize();
 
     String getLastTaskText();
+
+    boolean isTaskCompleted(String partOfTaskTitle);
 }

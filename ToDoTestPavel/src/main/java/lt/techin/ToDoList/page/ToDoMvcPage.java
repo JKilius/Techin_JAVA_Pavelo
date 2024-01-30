@@ -39,8 +39,9 @@ public class ToDoMvcPage extends BasePage implements ToDo {
     }
 
     @Override
-    public String getTaskStyleStatus(String partOfTaskTitle) {
-        return driver.findElement(By.xpath("//*[contains(text(),'" + partOfTaskTitle + "')]")).getCssValue("text-decoration");
+    public boolean isTaskCompleted(String partOfTaskTitle) {
+        return driver.findElement(By.xpath("//*[contains(text(),'" + partOfTaskTitle + "')]")).getCssValue("text" +
+                "-decoration").contains("line-through");
     }
 
     @Override
