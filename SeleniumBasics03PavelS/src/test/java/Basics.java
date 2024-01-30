@@ -56,7 +56,7 @@ public class Basics {
         clickOnWishlist();
         driver.findElement(By.id("input-email")).sendKeys("email@email.com");
 //        System.out.println(driver.findElement(By.id("input-email")).getAttribute("value"));
-        assertEquals("email@email.com",driver.findElement(By.id("input-email")).getAttribute("value"));
+        assertEquals("email@email.com", driver.findElement(By.id("input-email")).getAttribute("value"));
 
 
     }
@@ -68,7 +68,7 @@ public class Basics {
         findInputAndEnterEmail();
         driver.findElement(By.id("input-email")).clear();
 //        System.out.println(driver.findElement(By.id("input-email")).getAttribute("value"));
-        assertEquals("",driver.findElement(By.id("input-email")).getAttribute("value"));
+        assertEquals("", driver.findElement(By.id("input-email")).getAttribute("value"));
     }
 
     //7.Submit form
@@ -80,14 +80,14 @@ public class Basics {
         assertTrue(driver.findElement(By.cssSelector("#alert")).isDisplayed());
     }
 
-//8.Click on register a new customer
-@Test
+    //8.Click on register a new customer
+    @Test
 //@Disabled
-public void clickToRegister() {
-    clickOnWishlist();
-    driver.findElement(By.xpath("/html//div[@id='content']/div[@class='row']//a[@href='http://192.168.1.117/en-gb?route=account/register']")).click();
-    assertEquals("Register Account",driver.getTitle());
-}
+    public void clickToRegister() {
+        clickOnWishlist();
+        driver.findElement(By.xpath("/html//div[@id='content']/div[@class='row']//a[@href='http://192.168.1.117/en-gb?route=account/register']")).click();
+        assertEquals("Register Account", driver.getTitle());
+    }
 //9.Check if the field to input password is enabled and print the result
 
 //10. Check if cart element is displayed and print the result
@@ -100,5 +100,4 @@ public void clickToRegister() {
 //17. Close the window
 
 
-
-    }
+}
