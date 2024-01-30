@@ -8,13 +8,14 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
-public class ToDoMvcPage extends BasePage implements ToDo{
+public class ToDoMvcPage extends BasePage implements ToDo {
 
-    @FindBy (css = "#todo-input")
-   protected WebElement inputAddNewTask;
-
-    @FindBy (css = ".todo-list label")
-   protected List<WebElement> taskList;
+    @FindBy(css = "#todo-input")
+    protected WebElement inputAddNewTask;
+    @FindBy(xpath = "//ul[@class='todo-list']/li[last()]")
+    protected WebElement listTaskLast;
+    @FindBy(css = ".todo-list label")
+    protected List<WebElement> taskList;
 
     public ToDoMvcPage(WebDriver webDriver) {
         super(webDriver);
@@ -33,18 +34,19 @@ public class ToDoMvcPage extends BasePage implements ToDo{
 
     @Override
     public void markTaskAsDone(String partOfTaskTitle) {
-        driver.findElement(By.xpath("//*[contains(text(),'"+partOfTaskTitle+"')]/../input")).click();
+        driver.findElement(By.xpath("//*[contains(text(),'" + partOfTaskTitle + "')]/../input")).click();
 
     }
 
     @Override
     public String getTaskStyleStatus(String partOfTaskTitle) {
-        return driver.findElement(By.xpath("//*[contains(text(),'"+partOfTaskTitle+"')]")).getCssValue("text-decoration");    }
+        return driver.findElement(By.xpath("//*[contains(text(),'" + partOfTaskTitle + "')]")).getCssValue("text-decoration");
+    }
 
     @Override
     public void deleteTask(String partOfTaskTitle) {
-        actions.moveToElement(driver.findElement(By.xpath("//*[contains(text(),'"+partOfTaskTitle+"')]"))).perform();
-        actions.click(driver.findElement(By.xpath("//*[contains(text(),'"+partOfTaskTitle+"')]/../button"))).perform();
+        actions.moveToElement(driver.findElement(By.xpath("//*[contains(text(),'" + partOfTaskTitle + "')]"))).perform();
+        actions.click(driver.findElement(By.xpath("//*[contains(text(),'" + partOfTaskTitle + "')]/../button"))).perform();
     }
 
     @Override
@@ -56,5 +58,15 @@ public class ToDoMvcPage extends BasePage implements ToDo{
     @Override
     public boolean isItemInList(String newTaskTitle) {
         return taskList.stream().map(WebElement::getText).anyMatch(text -> text.contains(newTaskTitle));
+    }
+
+    @Override
+    public int getTaskListSize() {
+        return taskList.size();
+    }
+
+    @Override
+    public String getLastTaskText() {
+        return listTaskLast.getText();
     }
 }

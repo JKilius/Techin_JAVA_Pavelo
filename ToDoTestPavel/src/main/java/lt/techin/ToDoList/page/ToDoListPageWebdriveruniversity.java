@@ -15,7 +15,10 @@ public class ToDoListPageWebdriveruniversity extends BasePage implements ToDo {
     @FindBy(xpath = "//input[@type='text']")
     protected WebElement inputAddNewTask;
     @FindBy(xpath = "//li[1]")
-    protected WebElement listItem1;
+    protected WebElement listTask1;
+
+    @FindBy(xpath = "//li[last()]")
+    protected WebElement listTaskLast;
 
     @FindBy(xpath = "//li")
     protected List<WebElement> taskList;
@@ -34,7 +37,7 @@ public class ToDoListPageWebdriveruniversity extends BasePage implements ToDo {
     }
 
     public void markTaskAsDone(String partOfTaskTitle) {
-        wait.until(ExpectedConditions.visibilityOf(listItem1));
+        wait.until(ExpectedConditions.visibilityOf(listTask1));
         driver.findElement(By.xpath("//*[contains(text(),'" + partOfTaskTitle + "')]")).click();
     }
 
@@ -56,5 +59,15 @@ public class ToDoListPageWebdriveruniversity extends BasePage implements ToDo {
     @Override
     public boolean isItemInList(String newTaskTitle) {
         return taskList.stream().map(WebElement::getText).anyMatch(text -> text.contains(newTaskTitle));
+    }
+
+    @Override
+    public int getTaskListSize() {
+        return taskList.size();
+    }
+
+    @Override
+    public String getLastTaskText() {
+        return listTaskLast.getText();
     }
 }

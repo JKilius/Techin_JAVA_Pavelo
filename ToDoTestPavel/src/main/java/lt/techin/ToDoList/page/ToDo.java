@@ -18,4 +18,8 @@ public interface ToDo {
     long getCompletedTaskCount();
 
     boolean isItemInList(String newTaskTitle);
+
+    int getTaskListSize();
+
+    String getLastTaskText();
 }

@@ -23,11 +23,9 @@ public class ToDoListTest {
         driver = new ChromeDriver();
 //        driver.get("https://webdriveruniversity.com/To-Do-List/index.html");
         driver.get("https://todomvc.com/examples/react/dist/");
-
-        driver.manage().window().maximize();
 //        toDoListPage = new ToDoListPageWebdriveruniversity(driver);
         toDoListPage = new ToDoMvcPage(driver);
-
+        driver.manage().window().maximize();
     }
 
     @AfterEach
@@ -41,9 +39,9 @@ public class ToDoListTest {
         int listSizeBefore = toDoListPage.getTaskList().size();
         toDoListPage.addNewTask(newTaskTitle);
         int listSizeAfter = toDoListPage.getTaskList().size();
-        String lastElementText = toDoListPage.getTaskList().getLast().getText();
+        String lastTaskText = toDoListPage.getLastTaskText();
         assertEquals(listSizeBefore + 1, listSizeAfter);
-        assertEquals(newTaskTitle, lastElementText);
+        assertEquals(newTaskTitle, lastTaskText);
     }
 
     @Test
@@ -62,9 +60,9 @@ public class ToDoListTest {
     void deleteTask() {
         String newTaskTitle = "Papasakoti apie Jėzų Kristų";
         toDoListPage.addNewTask(newTaskTitle);
-        int taskListSizeBefore = toDoListPage.getTaskList().size();
+        int taskListSizeBefore = toDoListPage.getTaskListSize();
         toDoListPage.deleteTask(newTaskTitle);
-        int taskListSizeAfter = toDoListPage.getTaskList().size();
+        int taskListSizeAfter = toDoListPage.getTaskListSize();
         assertEquals(taskListSizeBefore - 1, taskListSizeAfter);
         assertFalse(toDoListPage.isItemInList(newTaskTitle));
     }
