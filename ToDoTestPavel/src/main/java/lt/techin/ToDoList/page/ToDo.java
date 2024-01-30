@@ -16,4 +16,6 @@ public interface ToDo {
     void deleteTask(String partOfTaskTitle);
 
     long getCompletedTaskCount();
+
+    boolean isItemInList(String newTaskTitle);
 }

@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.List;
 
-public abstract class BasePage implements ToDo {
+public abstract class BasePage {
     protected WebDriver driver;
     protected Actions actions;
     protected WebDriverWait wait;
