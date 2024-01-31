@@ -1,5 +1,6 @@
 package lt.techin.pavels.loginpage.test;
 
+import lt.techin.pavels.loginpage.AccountPage;
 import lt.techin.pavels.loginpage.LoginPage;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
@@ -13,12 +14,14 @@ public class LoginPageTest {
     protected WebDriver driver;
 
     protected LoginPage loginPage;
+    protected AccountPage accountPage;
 
     @BeforeEach
     void setup() {
         driver = new ChromeDriver();
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
         loginPage = new LoginPage(driver);
+        accountPage = new AccountPage(driver);
         driver.manage().window().maximize();
     }
     @AfterEach
@@ -32,9 +35,9 @@ public class LoginPageTest {
         String password = loginPage.getPassword();
         loginPage.enterUserName(userName);
         loginPage.enterPassword(password);
-        Assertions.assertTrue(loginPage.isLoginTrue());
-        if (loginPage.isLoginTrue()) {
-            loginPage.logOut();
+        Assertions.assertTrue(accountPage.isLoginTrue());
+        if (accountPage.isLoginTrue()) {
+            accountPage.logOut();
         }
     }
 
@@ -44,8 +47,8 @@ public class LoginPageTest {
         String password = "123";
         loginPage.enterUserName(userName);
         loginPage.enterPassword(password);
-        Assertions.assertTrue(loginPage.IsCredentialAlerTrue());
-        Assertions.assertFalse(loginPage.isLoginTrue());
+        Assertions.assertTrue(loginPage.isCredentialAlerTrue());
+        Assertions.assertFalse(accountPage.isLoginTrue());
     }
 
 }

@@ -29,10 +29,7 @@ public class LoginPage {
     WebElement alertText;
     @FindBy (css =".orangehrm-login-title")
     WebElement titleLogin;
-    @FindBy (css=".oxd-userdropdown-name")
-    WebElement dropDownUser;
-    @FindBy (linkText = "Logout")
-    WebElement linkLogout;
+
 
 
 
@@ -68,24 +65,10 @@ public class LoginPage {
         return parts[1];
     }
 
-    public boolean IsCredentialAlerTrue() {
+    public boolean isCredentialAlerTrue() {
         wait.until(ExpectedConditions.visibilityOf(alertText));
         return alertText.isDisplayed();
     }
 
-    public boolean isLoginTrue() {
-        try {
-            wait = new WebDriverWait(driver,Duration.ofSeconds(3));
-            wait.until(ExpectedConditions.visibilityOf(dropDownUser));
-            return true;
-        } catch (TimeoutException e) {
-            return false;
-        }
-    }
 
-    public void logOut() {
-        dropDownUser.click();
-        wait.until(ExpectedConditions.visibilityOf(linkLogout));
-        linkLogout.click();
-    }
 }
