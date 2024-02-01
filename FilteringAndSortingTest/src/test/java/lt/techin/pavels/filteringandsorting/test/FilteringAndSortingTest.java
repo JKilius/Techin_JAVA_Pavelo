@@ -46,7 +46,6 @@ public class FilteringAndSortingTest {
             List<String> unsortedColumn = filteringAndSortingPage.getFirsColumnText();
             listUnsortedColumns.addAll(unsortedColumn);
             unsortedColumn.forEach(System.out::print);
-            System.out.println(filteringAndSortingPage.isNextButtonDisabled());
             if (filteringAndSortingPage.isNextButtonDisabled()) break;
             filteringAndSortingPage.clickLinkNextTablePage();
         }
@@ -58,8 +57,6 @@ public class FilteringAndSortingTest {
         while (true) {
             List<String> pageSortedColumn = filteringAndSortingPage.getFirsColumnText();
             listPageSortedColumns.addAll(pageSortedColumn);
-            pageSortedColumn.forEach(System.out::print);
-            System.out.println();
             if (filteringAndSortingPage.isNextButtonDisabled()) break;
             filteringAndSortingPage.clickLinkNextTablePage();
         }
