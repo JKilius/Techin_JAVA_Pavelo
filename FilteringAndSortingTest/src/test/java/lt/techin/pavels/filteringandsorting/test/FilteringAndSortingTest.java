@@ -45,7 +45,6 @@ public class FilteringAndSortingTest {
         while (true) {
             List<String> unsortedColumn = filteringAndSortingPage.getFirsColumnText();
             listUnsortedColumns.addAll(unsortedColumn);
-            unsortedColumn.forEach(System.out::print);
             if (filteringAndSortingPage.isNextButtonDisabled()) break;
             filteringAndSortingPage.clickLinkNextTablePage();
         }
