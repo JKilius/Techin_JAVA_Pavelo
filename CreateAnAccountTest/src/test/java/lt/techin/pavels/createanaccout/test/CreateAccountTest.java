@@ -2,37 +2,53 @@ package lt.techin.pavels.createanaccout.test;
 
 import lt.techin.pavels.createanaccout.page.LandingPage;
 import lt.techin.pavels.createanaccout.page.RegisterPage;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.slf4j.Logger;
 import utils.TestUtils;
 
+import java.util.Objects;
+
+import static java.lang.invoke.MethodHandles.lookup;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+import static org.slf4j.LoggerFactory.getLogger;
 
 public class CreateAccountTest {
     protected WebDriver driver;
     protected LandingPage landingPage;
     protected RegisterPage registerPage;
 
+    private static final Logger log = getLogger(lookup().lookupClass());
+
     @BeforeEach
     void setup() {
         driver = new ChromeDriver();
-        driver.get("https://practice.expandtesting.com/notes/app");
-        driver.manage().window().maximize();
         landingPage = new LandingPage(driver);
         registerPage = new RegisterPage(driver);
+        log.info("Test environment initialized");
+        String URL = "https://practice.expandtesting.com/notes/app";
+        driver.get(URL);
+        log.info("Navigated to {}", URL);
+        driver.manage().window().maximize();
     }
 
     @Test
     void registerPageLoadedTest() {
+        log.info("registerPageLoadedTest started");
         landingPage.linkCreateAnAccountClick();
         String currentURL = driver.getCurrentUrl();
-        assertThat(currentURL).contains("/register");
+        assertThat(currentURL).as("Expected URL to contain '/register").contains("/register");
+        log.info(("registerPageLoadedTest completed"));
     }
 
     @Test
     void registerTest() {
+        log.info("registerTest started");
         landingPage.linkCreateAnAccountClick();
         String emailUnique = TestUtils.emailGenerateByTime();
         String name = "John";
@@ -42,68 +58,46 @@ public class CreateAccountTest {
         registerPage.enterPassword(password);
         registerPage.enterConfirmPassword(password);
         registerPage.submitRegisterClick();
-        assertThat(registerPage.isAlertRegisterSuccessVisible()).isTrue();
+        assertThat(registerPage.isAlertRegisterSuccessVisible()).as("Expected successful registration alert to be " +
+                "visible").isTrue();
+        log.info(("registerTest completed"));
     }
 
-    @Test
-    void registerFailNoEmailAlertTest(){
+    @ParameterizedTest
+    @CsvSource({
+            "           '', 'testName', 'password123', 'password123', 'Email address is required'",
+            "'notAnEmail',  'testName', 'password123', 'password123', 'Email address is invalid'",
+            "'randomEmail',         '', 'password123', 'password123', 'User name is required'",
+            "'randomEmail',      'nam', 'password123', 'password123', 'User name should be between 4 and 30 characters'",
+            "'randomEmail', 'veryLongNamePast30Characterslia', 'password123', 'password123', 'User name should be " +
+                                                                                                "between 4 and 30 characters'",
+            "'randomEmail', 'testName',            '', 'password123', 'Password is required'",
+            "'randomEmail', 'testName', 'short',       'password123', 'Password should be between 6 and 30 characters'",
+            "'randomEmail', 'testName', 'veryLongPassPast30Characterslia','veryLongPassPast30Characterslia', 'Password should be " +
+                                                                                                "between 6 and 30 characters'",
+            "'randomEmail', 'testName', 'password123',            '', 'Confirm Password is required'",
+            "'randomEmail', 'testName', 'password123', 'notMatchingPass321', 'Passwords don''t match!'",
+    })
+    void registerFailParameterizedTest(String email, String name, String password, String confirmPassword,
+                                       String expectedAlertMessage) {
+        log.info("registerFailTest started");
         landingPage.linkCreateAnAccountClick();
-        String name = "John";
-        String password = "password123";
-        registerPage.enterName(name);
-        registerPage.enterPassword(password);
-        registerPage.enterConfirmPassword(password);
-        registerPage.submitRegisterClick();
-        assertThat(registerPage.isAlertEmailRequiredVisible()).isTrue();
-    }
-    @Test
-    void registerFailNoUserNameAlertTest(){
-        landingPage.linkCreateAnAccountClick();
-        String emailUnique = TestUtils.emailGenerateByTime();
-        String password = "password123";
-        registerPage.enterEmailAddress(emailUnique);
-        registerPage.enterPassword(password);
-        registerPage.enterConfirmPassword(password);
-        registerPage.submitRegisterClick();
-        assertThat(registerPage.isAlertUserNameRequiredVisible()).isTrue();
-    }
-    @Test
-    void registerFailNoPasswordAlertTest(){
-        landingPage.linkCreateAnAccountClick();
-        String emailUnique = TestUtils.emailGenerateByTime();
-        String name = "John";
-        String password = "password123";
-        registerPage.enterEmailAddress(emailUnique);
-        registerPage.enterName(name);
-        registerPage.enterConfirmPassword(password);
-        registerPage.submitRegisterClick();
-        assertThat(registerPage.isAlertPasswordRequiredVisible()).isTrue();
-    }
-    @Test
-    void registerFailNoConfirmPasswordAlertTest(){
-        landingPage.linkCreateAnAccountClick();
-        String emailUnique = TestUtils.emailGenerateByTime();
-        String name = "John";
-        String password = "password123";
+        String emailUnique = email;
+        if (Objects.equals(email, "randomEmail")) {
+            emailUnique = TestUtils.emailGenerateByTime();
+        }
         registerPage.enterEmailAddress(emailUnique);
         registerPage.enterName(name);
         registerPage.enterPassword(password);
+        registerPage.enterConfirmPassword(confirmPassword);
         registerPage.submitRegisterClick();
-        assertThat(registerPage.isAlertConfirmPasswordRequiredVisible()).isTrue();
+        assertThat(registerPage.isAlertWithTextVisible(expectedAlertMessage)).as("Expected alert message to be visible: " + expectedAlertMessage).isTrue();
+        log.info(("registerTest completed"));
     }
-    @Test
-    void registerFailPasswordDontMatchAlertTest() {
-        landingPage.linkCreateAnAccountClick();
-        String emailUnique = TestUtils.emailGenerateByTime();
-        String name = "John";
-        String password = "password123";
-        String unmachingPassword = "unmatchingpass321";
-        registerPage.enterEmailAddress(emailUnique);
-        registerPage.enterName(name);
-        registerPage.enterPassword(password);
-        registerPage.enterConfirmPassword(unmachingPassword);
-        registerPage.submitRegisterClick();
-        assertThat(registerPage.isAlertPasswordsDoNotMatchVisible()).isTrue();
+    
+    @AfterEach
+    void tearDown() {
+        driver.quit();
+        log.info("WebDriver closed");
     }
-
 }
