@@ -58,8 +58,9 @@ public class ApichallengesTempTest {
         // Extract 'id' values from the response
         System.out.println("---Looking up extracted id values---");
 
-        JsonPath jsonPath = responseGet.jsonPath();
-        List<Integer> ids = jsonPath.getList("todos.id");
+        List<Integer> ids = responseGet.then().extract().path("todos.id");
+//        JsonPath jsonPath = responseGet.jsonPath();
+//        List<Integer> ids = jsonPath.getList("todos.id");
         System.out.println("All 'id' values: " + ids);
         System.out.println();
 
