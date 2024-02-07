@@ -69,6 +69,7 @@ public class RegisterPage extends BasePage implements Register {
     }
 
     public boolean isAlertWithTextVisible(String alertMessage) {
+//        return alertRegisterSuccess.getText().contains(alertMessage);
         return errorMessages.stream().anyMatch(error -> error.getText().contains(alertMessage));
     }
 

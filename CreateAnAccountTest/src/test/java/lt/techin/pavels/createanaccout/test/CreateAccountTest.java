@@ -3,6 +3,7 @@ package lt.techin.pavels.createanaccout.test;
 import lt.techin.pavels.createanaccout.page.LandingPage;
 import lt.techin.pavels.createanaccout.page.RegisterPage;
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -66,33 +67,33 @@ public class CreateAccountTest {
     @ParameterizedTest
     @CsvSource({
             "           '', 'testName', 'password123', 'password123', 'Email address is required'",
-            "'notAnEmail',  'testName', 'password123', 'password123', 'Email address is invalid'",
-            "'randomEmail',         '', 'password123', 'password123', 'User name is required'",
-            "'randomEmail',      'nam', 'password123', 'password123', 'User name should be between 4 and 30 characters'",
-            "'randomEmail', 'veryLongNamePast30Characterslia', 'password123', 'password123', 'User name should be " +
+            "' notAnEmail', 'testName', 'password123', 'password123', 'Email address is invalid'",
+            "'uniqueEmail',         '', 'password123', 'password123', 'User name is required'",
+            "'uniqueEmail',      'nam', 'password123', 'password123', 'User name should be between 4 and 30 characters'",
+            "'uniqueEmail', 'veryLongNamePast30Characterslia', 'password123', 'password123', 'User name should be " +
                                                                                                 "between 4 and 30 characters'",
-            "'randomEmail', 'testName',            '', 'password123', 'Password is required'",
-            "'randomEmail', 'testName', 'short',       'password123', 'Password should be between 6 and 30 characters'",
-            "'randomEmail', 'testName', 'veryLongPassPast30Characterslia','veryLongPassPast30Characterslia', 'Password should be " +
+            "'uniqueEmail', 'testName',            '', 'password123', 'Password is required'",
+            "'uniqueEmail', 'testName', 'short',       'password123', 'Password should be between 6 and 30 characters'",
+            "'uniqueEmail', 'testName', 'veryLongPassPast30Characterslia','veryLongPassPast30Characterslia', 'Password should be " +
                                                                                                 "between 6 and 30 characters'",
-            "'randomEmail', 'testName', 'password123',            '', 'Confirm Password is required'",
-            "'randomEmail', 'testName', 'password123', 'notMatchingPass321', 'Passwords don''t match!'",
+            "'uniqueEmail', 'testName', 'password123',            '', 'Confirm Password is required'",
+            "'uniqueEmail', 'testName', 'password123', 'notMatchingPass321', 'Passwords don''t match!'",
     })
     void registerFailParameterizedTest(String email, String name, String password, String confirmPassword,
                                        String expectedAlertMessage) {
         log.info("registerFailTest started");
         landingPage.linkCreateAnAccountClick();
-        String emailUnique = email;
-        if (Objects.equals(email, "randomEmail")) {
-            emailUnique = TestUtils.emailGenerateByTime();
+        if (Objects.equals(email, "uniqueEmail")) {
+            email = TestUtils.emailGenerateByTime();
         }
-        registerPage.enterEmailAddress(emailUnique);
+        registerPage.enterEmailAddress(email);
         registerPage.enterName(name);
         registerPage.enterPassword(password);
         registerPage.enterConfirmPassword(confirmPassword);
         registerPage.submitRegisterClick();
         assertThat(registerPage.isAlertWithTextVisible(expectedAlertMessage)).as("Expected alert message to be visible: " + expectedAlertMessage).isTrue();
         log.info(("registerTest completed"));
+//        Assertions.assertTrue(registerPage.isAlertWithTextVisible(expectedAlertMessage),"Expected alert message to be visible: " + expectedAlertMessage);
     }
     
     @AfterEach
