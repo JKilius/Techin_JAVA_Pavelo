@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -65,20 +66,21 @@ public class CreateAccountTest {
     }
 
     @ParameterizedTest
-    @CsvSource({
-            "           '', 'testName', 'password123', 'password123', 'Email address is required'",
-            "' notAnEmail', 'testName', 'password123', 'password123', 'Email address is invalid'",
-            "'uniqueEmail',         '', 'password123', 'password123', 'User name is required'",
-            "'uniqueEmail',      'nam', 'password123', 'password123', 'User name should be between 4 and 30 characters'",
-            "'uniqueEmail', 'veryLongNamePast30Characterslia', 'password123', 'password123', 'User name should be " +
-                                                                                                "between 4 and 30 characters'",
-            "'uniqueEmail', 'testName',            '', 'password123', 'Password is required'",
-            "'uniqueEmail', 'testName', 'short',       'password123', 'Password should be between 6 and 30 characters'",
-            "'uniqueEmail', 'testName', 'veryLongPassPast30Characterslia','veryLongPassPast30Characterslia', 'Password should be " +
-                                                                                                "between 6 and 30 characters'",
-            "'uniqueEmail', 'testName', 'password123',            '', 'Confirm Password is required'",
-            "'uniqueEmail', 'testName', 'password123', 'notMatchingPass321', 'Passwords don''t match!'",
-    })
+//    @CsvSource({
+//            "           '', 'testName', 'password123', 'password123', 'Email address is required'",
+//            "' notAnEmail', 'testName', 'password123', 'password123', 'Email address is invalid'",
+//            "'uniqueEmail',         '', 'password123', 'password123', 'User name is required'",
+//            "'uniqueEmail',      'nam', 'password123', 'password123', 'User name should be between 4 and 30 characters'",
+//            "'uniqueEmail', 'veryLongNamePast30Characterslia', 'password123', 'password123', 'User name should be " +
+//                                                                                                "between 4 and 30 characters'",
+//            "'uniqueEmail', 'testName',            '', 'password123', 'Password is required'",
+//            "'uniqueEmail', 'testName', 'short',       'password123', 'Password should be between 6 and 30 characters'",
+//            "'uniqueEmail', 'testName', 'veryLongPassPast30Characterslia','veryLongPassPast30Characterslia', 'Password should be " +
+//                                                                                                "between 6 and 30 characters'",
+//            "'uniqueEmail', 'testName', 'password123',            '', 'Confirm Password is required'",
+//            "'uniqueEmail', 'testName', 'password123', 'notMatchingPass321', 'Passwords don''t match!'",
+//    })
+    @CsvFileSource (resources = "/testData.csv", numLinesToSkip = 1)
     void registerFailParameterizedTest(String email, String name, String password, String confirmPassword,
                                        String expectedAlertMessage) {
         log.info("registerFailTest started");
@@ -95,6 +97,9 @@ public class CreateAccountTest {
         log.info(("registerTest completed"));
 //        Assertions.assertTrue(registerPage.isAlertWithTextVisible(expectedAlertMessage),"Expected alert message to be visible: " + expectedAlertMessage);
     }
+
+
+
     
     @AfterEach
     void tearDown() {

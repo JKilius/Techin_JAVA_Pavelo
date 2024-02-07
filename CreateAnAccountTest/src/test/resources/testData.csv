@@ -1,0 +1,12 @@
+email,name,password,confirmPassword,errorMessage
+"","name","password","password","Email address is required"
+"invalidEmail","name","password","password","Email address is invalid"
+"valid@email.com","","password","password","User name is required"
+"valid@email.com","abc","password","password","User name should be between 4 and 30 characters"
+"valid@email.com","abcdefghijklmnopqrstuvwxyzabcdef","password","password","User name should be between 4 and 30 characters"
+"valid@email.com","name","","password","Password is required"
+"valid@email.com","name","password","","Confirm Password is required"
+"valid@email.com","name","password","differentPassword","Passwords don't match!"
+"valid@email.com","name","abc12","password","Password should be between 6 and 30 characters"
+"valid@email.com","name","abcdefghijklmnopqrstuvwxyzabcdef","password","Password should be between 6 and 30 characters"
+
