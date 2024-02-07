@@ -9,4 +9,5 @@ email,name,password,confirmPassword,errorMessage
 "valid@email.com","name","password","differentPassword","Passwords don't match!"
 "valid@email.com","name","abc12","password","Password should be between 6 and 30 characters"
 "valid@email.com","name","abcdefghijklmnopqrstuvwxyzabcdef","password","Password should be between 6 and 30 characters"
+"valid@email.com","name","password","","Will take screenshot because of failed assertion to test screenshot taking process"
 

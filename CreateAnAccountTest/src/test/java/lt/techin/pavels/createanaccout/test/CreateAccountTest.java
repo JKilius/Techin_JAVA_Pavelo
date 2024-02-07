@@ -2,21 +2,30 @@ package lt.techin.pavels.createanaccout.test;
 
 import lt.techin.pavels.createanaccout.page.LandingPage;
 import lt.techin.pavels.createanaccout.page.RegisterPage;
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.CsvSource;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.slf4j.Logger;
 import utils.TestUtils;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Objects;
 
 import static java.lang.invoke.MethodHandles.lookup;
+import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.slf4j.LoggerFactory.getLogger;
 
@@ -93,14 +102,51 @@ public class CreateAccountTest {
         registerPage.enterPassword(password);
         registerPage.enterConfirmPassword(confirmPassword);
         registerPage.submitRegisterClick();
-        assertThat(registerPage.isAlertWithTextVisible(expectedAlertMessage)).as("Expected alert message to be visible: " + expectedAlertMessage).isTrue();
-        log.info(("registerTest completed"));
+//        assertThat(registerPage.isAlertWithTextVisible(expectedAlertMessage)).as("Expected alert message to be visible: " + expectedAlertMessage).isTrue();
+//        log.info(("registerTest completed"));
+
+        try {
+            assertThat(registerPage.isAlertWithTextVisible(expectedAlertMessage))
+                    .as("Expected alert message to be visible: " + expectedAlertMessage)
+                    .isTrue();
+        } catch (AssertionError e) {
+            // Take a screenshot with the TestUtils class
+            TestUtils.takeScreenshot(driver, "testScreenshotWithUtilClass");
+            // Log the error message
+            log.error("Assertion failed: " + e.getMessage());
+            // Re-throw the exception
+            throw e;
+        }
 //        Assertions.assertTrue(registerPage.isAlertWithTextVisible(expectedAlertMessage),"Expected alert message to be visible: " + expectedAlertMessage);
     }
 
+    @Test
+    @Disabled
+    void testScreenshotPng() throws IOException {
 
+        String URL = "https://practice.expandtesting.com/notes/app";
+        driver.get(URL);
+        log.info("Navigated to {}", URL);
 
-    
+        TakesScreenshot ts = (TakesScreenshot) driver;
+
+        File screenshot = ts.getScreenshotAs(OutputType.FILE);
+        log.debug("Screenshot created on {}", screenshot);
+
+        Path destination = Paths.get("screenshot.png");
+        Files.move(screenshot.toPath(), destination, REPLACE_EXISTING);
+        log.debug("Screenshot moved to {}", destination);
+
+        Assertions.assertThat(destination).exists();
+    }
+
+    @Test
+    @Disabled
+    void testScreenshotWithUtilClass()  {
+        driver.get("https://practice.expandtesting.com/notes/app");
+
+        TestUtils.takeScreenshot(driver, "testScreenshotWithUtilClass" );
+    }
     @AfterEach
     void tearDown() {
         driver.quit();
