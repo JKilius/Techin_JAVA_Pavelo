@@ -12,10 +12,9 @@ import static io.restassured.RestAssured.*;
 public class ApichallengesTempTest {
 
     @Test
-    public void createAndDeleteChallanges() {
+    public void createAndDeleteChallenges() {
         // Base URLs
         String baseUrl = "https://apichallenges.herokuapp.com";
-//        String todosUrl = baseUrl + "/todos";
         String todosEndPoint = "/todos";
 
         // Header settings
