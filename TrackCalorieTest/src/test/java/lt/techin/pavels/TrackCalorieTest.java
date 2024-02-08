@@ -112,7 +112,17 @@ public class TrackCalorieTest {
         assertEquals(0, collectionSizeAfter, "Expected collection size to be = 0");
     }
 
-// EditMealButtonTest
+        // EditMealButtonTest
+    @Test
+    void editMealButtonTest(){
+        // Adding items to be deleted
+        String itemName = "itemName";
+        String itemCalories = "100";
+        trackCaloriePage.addItem(itemName, itemCalories);
+        trackCaloriePage.clickButtonEditMeal(itemName);
+        assertTrue(trackCaloriePage.isButtonUpdateMealVisible(),"Expected for Update Meal button to be visible");
+    }
+
 // DeleteMealTest
 // BackFromEditButtonTest
 // CaloriesUpButtonTest

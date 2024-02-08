@@ -1,5 +1,6 @@
 package lt.techin.pavels;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -15,14 +16,16 @@ public class TrackCaloriePage extends BasePage {
     private WebElement inputItemName;
     @FindBy(css = "input#item-calories")
     private WebElement inputItemCalories;
-    @FindBy(css = ".add-btn.blue.btn.darken-3")
+    @FindBy(css = ".add-btn")
     private WebElement buttonAddMeal;
     @FindBy(css = ".total-calories")
     private WebElement totalCalories;
     @FindBy(css = ".collection-item")
     private List<WebElement> collectionItems;
-    @FindBy(css = ".clear-btn.btn.blue.lighten-3")
+    @FindBy(css = ".clear-btn")
     private WebElement buttonClearAll;
+    @FindBy(css = ".update-btn")
+    private WebElement buttonUpdateMeal;
 
     // Create method getTotalCalories
     public int getTotalCalories() {
@@ -59,8 +62,26 @@ public class TrackCaloriePage extends BasePage {
     }
 
     // Create method clickClearAll
-    public void clickButtonClearAll(){
+    public void clickButtonClearAll() {
         buttonClearAll.click();
+    }
+
+    // Create method clickButtonEditMeal
+    public void clickButtonEditMeal(String itemName) {
+        driver.findElement(By.xpath("//li/strong[contains(text(), 'itemName')]/../a/i")).click();
+    }
+
+    public boolean isButtonUpdateMealVisible(){
+        try {
+            return buttonUpdateMeal.isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    // Create method clickButtonUpdateMeal
+    public void clickButtonUpdateMeal() {
+        buttonUpdateMeal.click();
     }
 }
 
@@ -70,7 +91,5 @@ public class TrackCaloriePage extends BasePage {
 
 // Create method clickButtonCalorieUp
 // Create method clickButtonCalorieDown
-// Create method clickButtonEditMeal
-// Create method clickButtonUpdateMeal
 // Create method clickButtonDeleteMeal
 // Create method clickButtonBackFromEdit
