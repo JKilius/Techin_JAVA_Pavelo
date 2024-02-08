@@ -63,6 +63,14 @@ public class TrackCaloriePage extends BasePage {
         return collectionItems.stream().map(WebElement::getText).map(s -> s.split(" ")[1]).toList();
     }
 
+    public int collectionSize() {
+        return collectionItems.size();
+    }
+
+    public int numberOfMatchingNames(String itemName){
+        return (int) collectionItems.stream().map(WebElement::getText).map(s -> s.split(" ")[0]).filter(i -> i.contains(itemName)).count();
+    }
+
     // Create method clickClearAll
     public void clickButtonClearAll() {
         buttonClearAll.click();
@@ -73,7 +81,7 @@ public class TrackCaloriePage extends BasePage {
         driver.findElement(By.xpath("//li/strong[contains(text(), 'itemName')]/../a/i")).click();
     }
 
-    public boolean isButtonUpdateMealVisible(){
+    public boolean isButtonUpdateMealVisible() {
         try {
             return buttonUpdateMeal.isDisplayed();
         } catch (Exception e) {
@@ -87,7 +95,7 @@ public class TrackCaloriePage extends BasePage {
     }
 
     // Create method clickButtonDeleteMeal
-    public void clickButtonDeleteMeal(){
+    public void clickButtonDeleteMeal() {
         buttonDeleteMeal.click();
     }
 }
