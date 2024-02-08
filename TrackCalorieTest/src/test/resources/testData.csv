@@ -4,6 +4,7 @@ itemName,calories,expectedResult
 "abcde"," ",false
 "abcdef","0",false
 "abcdefg","-1",false
+" ","123",false
 "","123",false
 
 

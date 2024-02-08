@@ -26,6 +26,8 @@ public class TrackCaloriePage extends BasePage {
     private WebElement buttonClearAll;
     @FindBy(css = ".update-btn")
     private WebElement buttonUpdateMeal;
+    @FindBy(css = ".delete-btn")
+    private WebElement buttonDeleteMeal;
 
     // Create method getTotalCalories
     public int getTotalCalories() {
@@ -83,6 +85,11 @@ public class TrackCaloriePage extends BasePage {
     public void clickButtonUpdateMeal() {
         buttonUpdateMeal.click();
     }
+
+    // Create method clickButtonDeleteMeal
+    public void clickButtonDeleteMeal(){
+        buttonDeleteMeal.click();
+    }
 }
 
 
@@ -91,5 +98,4 @@ public class TrackCaloriePage extends BasePage {
 
 // Create method clickButtonCalorieUp
 // Create method clickButtonCalorieDown
-// Create method clickButtonDeleteMeal
 // Create method clickButtonBackFromEdit

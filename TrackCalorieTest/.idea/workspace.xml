@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8c2069e-82a5-48f7-aa09-07a7d4036e5d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lt/techin/pavels/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/techin/pavels/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lt/techin/pavels/TrackCaloriePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/techin/pavels/TrackCaloriePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/lt/techin/pavels/TrackCalorieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lt/techin/pavels/TrackCalorieTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testData.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +38,9 @@
   "keyToString": {
     "JUnit.TrackCalorieTest.addMealTest.executor": "Run",
     "JUnit.TrackCalorieTest.buttonClearAllTest.executor": "Run",
+    "JUnit.TrackCalorieTest.deleteMealTest.executor": "Run",
     "JUnit.TrackCalorieTest.editMealButtonTest.executor": "Run",
+    "JUnit.TrackCalorieTest.executor": "Run",
     "JUnit.TrackCalorieTest.tempTest.executor": "Run",
     "JUnit.TrackCalorieTest.totalCaloriesCountingTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -50,8 +54,8 @@
       <recent name="lt.techin.pavels" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TrackCalorieTest.editMealButtonTest">
-    <configuration name="TrackCalorieTest.addMealTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TrackCalorieTest.deleteMealTest">
+    <configuration name="TrackCalorieTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TrackCalorieTest" />
       <extension name="coverage">
         <pattern>
@@ -61,8 +65,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="lt.techin.pavels" />
       <option name="MAIN_CLASS_NAME" value="lt.techin.pavels.TrackCalorieTest" />
-      <option name="METHOD_NAME" value="addMealTest(java.lang.String,java.lang.String,boolean)" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -83,6 +86,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TrackCalorieTest.deleteMealTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TrackCalorieTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lt.techin.pavels.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lt.techin.pavels" />
+      <option name="MAIN_CLASS_NAME" value="lt.techin.pavels.TrackCalorieTest" />
+      <option name="METHOD_NAME" value="deleteMealTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TrackCalorieTest.editMealButtonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TrackCalorieTest" />
       <extension name="coverage">
@@ -94,22 +113,6 @@
       <option name="PACKAGE_NAME" value="lt.techin.pavels" />
       <option name="MAIN_CLASS_NAME" value="lt.techin.pavels.TrackCalorieTest" />
       <option name="METHOD_NAME" value="editMealButtonTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TrackCalorieTest.tempTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TrackCalorieTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lt.techin.pavels.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lt.techin.pavels" />
-      <option name="MAIN_CLASS_NAME" value="lt.techin.pavels.TrackCalorieTest" />
-      <option name="METHOD_NAME" value="tempTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -133,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TrackCalorieTest.deleteMealTest" />
+        <item itemvalue="JUnit.TrackCalorieTest" />
         <item itemvalue="JUnit.TrackCalorieTest.editMealButtonTest" />
         <item itemvalue="JUnit.TrackCalorieTest.buttonClearAllTest" />
         <item itemvalue="JUnit.TrackCalorieTest.totalCaloriesCountingTest" />
-        <item itemvalue="JUnit.TrackCalorieTest.addMealTest" />
-        <item itemvalue="JUnit.TrackCalorieTest.tempTest" />
       </list>
     </recent_temporary>
   </component>

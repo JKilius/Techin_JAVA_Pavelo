@@ -53,15 +53,19 @@ public class TrackCalorieTest {
 
         // Assertions
         if (expectedResult) {
-            assertEquals(collectionSizeBefore + 1, collectionSizeAfter, "Expected collection size to increase by 1 after adding item");
-            assertEquals(numberOfMatchingNamesBefore + 1, numberOfMatchingNamesAfter, "Expected number of matching names to increase by 1 after adding item");
+            assertEquals(collectionSizeBefore + 1, collectionSizeAfter, "Expected collection size to increase by 1 " +
+                    "after adding an item");
+            assertEquals(numberOfMatchingNamesBefore + 1, numberOfMatchingNamesAfter, "Expected number of matching " +
+                    "names to increase by 1 after adding an item");
             assertEquals(numberOfMatchingCaloriesBefore + 1, numberOfMatchingCaloriesAfter, "Expected number of " +
-                    "matching calories to increase by 1 after adding item");
+                    "matching calories to increase by 1 after adding an item");
         } else {
-            assertEquals(collectionSizeBefore, collectionSizeAfter, "Expected collection size to not increase by 1 after adding item");
-            assertEquals(numberOfMatchingNamesBefore, numberOfMatchingNamesAfter, "Expected number of matching names to not increase by 1 after adding item");
+            assertEquals(collectionSizeBefore, collectionSizeAfter, "Expected collection size to not increase by 1 " +
+                    "after adding an item");
+            assertEquals(numberOfMatchingNamesBefore, numberOfMatchingNamesAfter, "Expected number of matching names " +
+                    "to not increase by 1 after adding an item");
             assertEquals(numberOfMatchingCaloriesBefore, numberOfMatchingCaloriesAfter, "Expected number of " +
-                    "matching calories to increase by 1 after adding item");
+                    "matching calories to increase by 1 after adding an item");
         }
     }
 
@@ -112,18 +116,52 @@ public class TrackCalorieTest {
         assertEquals(0, collectionSizeAfter, "Expected collection size to be = 0");
     }
 
-        // EditMealButtonTest
+    // EditMealButtonTest
     @Test
-    void editMealButtonTest(){
-        // Adding items to be deleted
+    void editMealButtonTest() {
         String itemName = "itemName";
         String itemCalories = "100";
         trackCaloriePage.addItem(itemName, itemCalories);
         trackCaloriePage.clickButtonEditMeal(itemName);
-        assertTrue(trackCaloriePage.isButtonUpdateMealVisible(),"Expected for Update Meal button to be visible");
+        assertTrue(trackCaloriePage.isButtonUpdateMealVisible(), "Expected for Update Meal button to be visible");
     }
 
-// DeleteMealTest
+    // DeleteMealTest
+    @Test
+    void deleteMealTest() {
+        // Adding an item
+        String itemName = "itemName";
+        String itemCalories = "100";
+        trackCaloriePage.addItem(itemName, itemCalories);
+
+        // Initial data for assertion
+        List<String> collectionItemsNames = trackCaloriePage.getCollectionItemsNames();
+        List<String> collectionItemsCalories = trackCaloriePage.getCollectionItemsCalories();
+        int collectionSizeBefore = collectionItemsNames.size();
+        int numberOfMatchingNamesBefore = (int) collectionItemsNames.stream().filter(i -> i.contains(itemName)).count();
+        int numberOfMatchingCaloriesBefore =
+                (int) collectionItemsCalories.stream().filter(i -> i.contains(itemCalories)).count();
+
+        // Deleting item
+        trackCaloriePage.clickButtonEditMeal(itemName);
+        trackCaloriePage.clickButtonDeleteMeal();
+
+        // Data to be compared after deleting an item
+        collectionItemsNames = trackCaloriePage.getCollectionItemsNames();
+        collectionItemsCalories = trackCaloriePage.getCollectionItemsCalories();
+        int collectionSizeAfter = collectionItemsNames.size();
+        int numberOfMatchingNamesAfter = (int) collectionItemsNames.stream().filter(i -> i.contains(itemName)).count();
+        int numberOfMatchingCaloriesAfter =
+                (int) collectionItemsCalories.stream().filter(i -> i.contains(itemCalories)).count();
+
+        // Assertions
+        assertEquals(collectionSizeBefore - 1, collectionSizeAfter, "Expected collection size to decrease by 1 " +
+                "after deleting an item");
+        assertEquals(numberOfMatchingNamesBefore - 1, numberOfMatchingNamesAfter, "Expected number of matching " +
+                "names to decrease by 1 after deleting an item");
+        assertEquals(numberOfMatchingCaloriesBefore - 1, numberOfMatchingCaloriesAfter, "Expected number of " +
+                "matching calories to decrease by 1 after deleting an item");
+    }
 // BackFromEditButtonTest
 // CaloriesUpButtonTest
 // CaloriesDownButtonTest
