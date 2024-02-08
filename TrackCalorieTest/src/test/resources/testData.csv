@@ -1,0 +1,9 @@
+itemName,calories,expectedResult
+"abc","123",true
+"abcd","",false
+"abcde"," ",false
+"abcdef","0",false
+"abcdefg","-1",false
+"","123",false
+
+

@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8c2069e-82a5-48f7-aa09-07a7d4036e5d" name="Changes" comment="" />
+    <list default="true" id="f8c2069e-82a5-48f7-aa09-07a7d4036e5d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/techin/pavels/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/techin/pavels/TrackCaloriePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testData.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TrackCaloriePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lt/techin/pavels/TrackCalorieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lt/techin/pavels/TrackCalorieTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,9 +24,12 @@
       </list>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2c4dOE150CieyxkrROKxGBX1MQc" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -27,11 +37,77 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.TrackCalorieTest.addMealTest.executor": "Run",
+    "JUnit.TrackCalorieTest.tempTest.executor": "Run",
+    "JUnit.TrackCalorieTest.totalCaloriesCountingTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="lt.techin.pavels" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TrackCalorieTest.addMealTest">
+    <configuration name="TrackCalorieTest.addMealTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TrackCalorieTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lt.techin.pavels.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lt.techin.pavels" />
+      <option name="MAIN_CLASS_NAME" value="lt.techin.pavels.TrackCalorieTest" />
+      <option name="METHOD_NAME" value="addMealTest(java.lang.String,java.lang.String,boolean)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrackCalorieTest.tempTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TrackCalorieTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lt.techin.pavels.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lt.techin.pavels" />
+      <option name="MAIN_CLASS_NAME" value="lt.techin.pavels.TrackCalorieTest" />
+      <option name="METHOD_NAME" value="tempTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrackCalorieTest.totalCaloriesCountingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TrackCalorieTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lt.techin.pavels.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lt.techin.pavels" />
+      <option name="MAIN_CLASS_NAME" value="lt.techin.pavels.TrackCalorieTest" />
+      <option name="METHOD_NAME" value="totalCaloriesCountingTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TrackCalorieTest.addMealTest" />
+        <item itemvalue="JUnit.TrackCalorieTest.totalCaloriesCountingTest" />
+        <item itemvalue="JUnit.TrackCalorieTest.tempTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
