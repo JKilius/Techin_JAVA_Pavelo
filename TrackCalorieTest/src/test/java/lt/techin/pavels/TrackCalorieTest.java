@@ -25,22 +25,9 @@ public class TrackCalorieTest {
         driver.manage().window().maximize();
     }
 
-//    @Test
-//    void tempTest() {
-//        trackCaloriePage.enterItemName("abc");
-//        trackCaloriePage.enterItemCalories(100);
-//        trackCaloriePage.clickButtonAddMeal();
-////        driver.navigate().refresh();
-//        trackCaloriePage.addItem("abcd", 200);
-//        trackCaloriePage.getCollectionItemsNames().stream().map(s -> s.split(" ")[0]).forEach(System.out::println);
-//        trackCaloriePage.getCollectionItemsNames().stream().map(s -> s.split(" ")[1]).forEach(System.out::println);
-//    }
-
-
 // Tasks to accomplish in Test:
 
-// AddMealTest parameterized
-
+    // AddMealTest parameterized
     @ParameterizedTest
     @CsvFileSource(resources = "/testData.csv", numLinesToSkip = 1)
     void addMealTest(String itemName, String itemCalories, boolean expectedResult) {
@@ -83,20 +70,50 @@ public class TrackCalorieTest {
     void totalCaloriesCountingTest() {
         int expectedSum = 0;
         int itemCalories = 100;
+
+        // Adding 4 items and counting sum
         for (int i = 1; i < 5; i++) {
             String itemName = "Item" + i;
             trackCaloriePage.addItem(itemName, String.valueOf(itemCalories));
             if (itemCalories > 0) expectedSum += itemCalories;
             itemCalories += 100;
         }
-        int totalCalories = trackCaloriePage.getTotalCalories();
-        assertEquals(expectedSum, totalCalories);
 
+        // Getting Total calories
+        int totalCalories = trackCaloriePage.getTotalCalories();
+
+        // Asserting if Total Calories equal to the sum of inputted calories
+        assertEquals(expectedSum, totalCalories, "Expected for Total Calories to be equal to the sum of inputted calories");
+    }
+
+    // ClearAllButtonTest
+    @Test
+    void buttonClearAllTest() {
+        // Adding items to be deleted
+        String itemName = "itemName";
+        String itemCalories = "100";
+        trackCaloriePage.addItem(itemName, itemCalories);
+        trackCaloriePage.addItem(itemName, itemCalories);
+        trackCaloriePage.addItem(itemName, itemCalories);
+
+        // Getting collection size before clear all
+        List<String> collectionItemsNames = trackCaloriePage.getCollectionItemsNames();
+        int collectionSizeBefore = collectionItemsNames.size();
+
+        // Clearing all collection
+        trackCaloriePage.clickButtonClearAll();
+
+        // Getting collection size after clear all
+        collectionItemsNames = trackCaloriePage.getCollectionItemsNames();
+        int collectionSizeAfter = collectionItemsNames.size();
+
+        // Asserting if collection is empty
+        assertTrue(collectionSizeBefore > 0, "Expected to collection size to be > 0");
+        assertEquals(0, collectionSizeAfter, "Expected collection size to be = 0");
     }
 
 // EditMealButtonTest
 // DeleteMealTest
-// ClearAllButtonTest
 // BackFromEditButtonTest
 // CaloriesUpButtonTest
 // CaloriesDownButtonTest
