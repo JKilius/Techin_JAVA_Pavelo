@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="861d204a-c95d-400d-bccb-7479ed4ce400" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lt/techin/pavels/action/test/ActionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lt/techin/pavels/action/ActionPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/techin/pavels/action/ActionPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lt/techin/pavels/action/test/ActionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lt/techin/pavels/action/test/ActionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,11 +35,18 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.ActionTest.TempTest.executor": "Run",
+    "JUnit.ActionTest.clickAndHoldClickBoxTest.executor": "Run",
+    "JUnit.ActionTest.doubleClickingBoxTest.executor": "Run",
+    "JUnit.ActionTest.draggingBoxDroppableTest.executor": "Run",
+    "JUnit.ActionTest.executor": "Run",
+    "JUnit.ActionTest.hoverOverButtonsTest.executor": "Run",
+    "JUnit.ActionTest.tempTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -48,8 +54,8 @@
       <recent name="lt.techin.pavels.action" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="ActionTest.TempTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ActionTest.draggingBoxDroppableTest">
+    <configuration name="ActionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SeleniumBasics04Action" />
       <extension name="coverage">
         <pattern>
@@ -59,7 +65,70 @@
       </extension>
       <option name="PACKAGE_NAME" value="lt.techin.pavels.action.test" />
       <option name="MAIN_CLASS_NAME" value="lt.techin.pavels.action.test.ActionTest" />
-      <option name="METHOD_NAME" value="TempTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ActionTest.clickAndHoldClickBoxTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumBasics04Action" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lt.techin.pavels.action.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lt.techin.pavels.action.test" />
+      <option name="MAIN_CLASS_NAME" value="lt.techin.pavels.action.test.ActionTest" />
+      <option name="METHOD_NAME" value="clickAndHoldClickBoxTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ActionTest.doubleClickingBoxTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumBasics04Action" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lt.techin.pavels.action.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lt.techin.pavels.action.test" />
+      <option name="MAIN_CLASS_NAME" value="lt.techin.pavels.action.test.ActionTest" />
+      <option name="METHOD_NAME" value="doubleClickingBoxTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ActionTest.draggingBoxDroppableTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumBasics04Action" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lt.techin.pavels.action.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lt.techin.pavels.action.test" />
+      <option name="MAIN_CLASS_NAME" value="lt.techin.pavels.action.test.ActionTest" />
+      <option name="METHOD_NAME" value="draggingBoxDroppableTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ActionTest.tempTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumBasics04Action" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lt.techin.pavels.action.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lt.techin.pavels.action.test" />
+      <option name="MAIN_CLASS_NAME" value="lt.techin.pavels.action.test.ActionTest" />
+      <option name="METHOD_NAME" value="tempTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -67,7 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ActionTest.TempTest" />
+        <item itemvalue="JUnit.ActionTest.draggingBoxDroppableTest" />
+        <item itemvalue="JUnit.ActionTest" />
+        <item itemvalue="JUnit.ActionTest.clickAndHoldClickBoxTest" />
+        <item itemvalue="JUnit.ActionTest.doubleClickingBoxTest" />
+        <item itemvalue="JUnit.ActionTest.tempTest" />
       </list>
     </recent_temporary>
   </component>
